@@ -1,0 +1,100 @@
+.contact-container {
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    height: -webkit-fill-available;
+    background-color: #f5f4fe;
+}
+.title {
+    width: 100%;
+    padding-top: 50px;   
+    display: flex;
+    justify-content: center;
+    background-color: #0399ea4d;
+}
+.title h1 {
+    margin: 0;
+}
+
+.info-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #0399ea4d;
+}
+.contact-list {
+    line-height: 30px;
+    list-style: none;
+    padding: 0;
+}
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #f5f4fe;
+}
+.row-info {
+    display: flex;
+    width: 80%;
+    padding-bottom: 5px;
+}
+.row-info span {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.row-info span:nth-child(2) {
+    margin-left: 15px;
+}
+
+label {
+    font-size: 12px;
+    color: #525252;
+}
+input {
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #e8e8e8;
+}
+.name-input, .tel-input, .age-input, .note-input {
+    flex: 1;
+}
+.surname-input, .mail-input, .sex-input {
+    flex: 2;
+}
+.sex-input span {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 31px;
+    align-items: center;
+}
+#female-radio {
+    margin-left: 15px;
+}
+#check-input {
+    flex-direction: row;
+}
+.check-input label {
+    margin: 3px;
+}
+.note-input input {
+    width: 100%;
+    min-height: 62px;
+}
+#submit-button {
+    background-color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .row-info {
+        flex-direction: column;
+        width: 100%;
+    }
+    .row-info span:nth-child(2) {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,92 @@
+.uiux-container {
+    top: 50px;
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+}
+.uiux-container p {
+    text-align: justify;
+}
+.title h1 {
+    margin: 0;
+}
+.ux-article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.article-grid {
+    display: flex;
+}
+.aligned-left {
+    width: 70%;
+    padding: 20px 0;
+}
+.image {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.image img {
+    width: 280px;
+    height: auto;
+}
+.ui-article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #f5f4fe;
+}
+.ui-article .image {
+    justify-content: flex-start;
+    order: 1;
+}
+.aligned-right {
+    width: 70%;
+    float: right;
+    padding: 20px 0;
+    text-align: right;
+    order: 2;
+}
+.uxui-diffs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0399ea4d;
+}
+.table-grid {
+    padding: 20px 0 40px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 5px;
+    border: 1px solid #f5f4fe;
+}
+thead th:nth-child(1), tbody th {
+    text-align: right;
+}
+
+@media only screen and (max-width: 1200px) {
+    .article-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aligned-left {
+        width: 100%;
+    }
+    .aligned-right {
+        order:1;
+        width: 100%;
+        text-align: left;
+    }
+    .ux-article .image, .ui-article .image {
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  p, input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #FD9800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+  
+  a:hover {
+    color: rgb(200, 123, 6);
+  }
+  
+  .grid {
+    width: 80%;
+    max-width: 1300px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* STYLOVANI HLAVICKY */
+  header {
+    height: 50px;
+    width: 80%;
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    padding: 0 10%;
+  }
+  header .logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  header .logo span {
+      margin-left: 10px;
+      font-size: 14px;
+      color: #525252;
+      font-family: "Ubuntu", sans-serif;
+  }
+  header ul {
+    display: flex;
+    justify-content: flex-end;
+    flex: 3;
+    list-style: none;
+  }
+  header ul li {
+    padding: 0 20px;
+  }
+  header ul li a {
+    color: black;
+    transition: .2s ease;
+  }
+  .active {
+    color: #0782ce;
+  }
+  header ul li a:hover {
+    text-decoration: none;
+    color: #16a7ff;
+    transition: .2s ease;
+  }
+/* KONEC STYLOVANI HLAVICKY */
+
+/* SPECIALNI STYLY KVULI SCRIPTUM */
+.scrolling {
+    background-color: white;
+    box-shadow: 0 1px gainsboro;
+}
+
+@media only screen and (max-width: 1400px) {
+  .grid {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header .logo {
+    display: none;
+  }
+  #page-header {
+    justify-content: center;
+  }
+  header ul {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+  header ul li a {
+    font-size: 15px;
+  }
+}
